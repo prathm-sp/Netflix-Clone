@@ -7,7 +7,7 @@ import movieTrailer from "movie-trailer";
 const baseURL = "https://image.tmdb.org/t/p/original/";
 
 function Row({ title, URL, isLarge }) {
-  const [movies, setMovies] = useState();
+  const [movies, setMovies] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState("");
 
   useEffect(() => {
@@ -32,10 +32,13 @@ function Row({ title, URL, isLarge }) {
     if (trailerUrl) {
       setTrailerUrl("");
     } else {
-      movieTrailer(movie?.name || "dark")
-        .then((url) => {
+      movieTrailer(movie?.name || "")
+        .then(async (url) => {
           console.log(url);
-          const urlParams = new URLSearchParams(new URL(url).search);
+          var urlParams = await new URLSearchParams(new URL(url).search);
+          console.log("Yes");
+          console.log(urlParams);
+          console.log(urlParams.get("v"));
           setTrailerUrl(urlParams.get("v"));
         })
         .catch((err) => {
@@ -43,7 +46,7 @@ function Row({ title, URL, isLarge }) {
         });
     }
   };
-
+  console.log(trailerUrl);
   return (
     <div className="row">
       <h1>{title}</h1>
