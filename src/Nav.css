@@ -18,8 +18,8 @@
 .nav_logo {
   position: fixed;
   left: 20px;
-  width: 80px;
-
+  width: 150px;
+  top: 0;
   object-fit: contain;
 }
 .nav_avatar {
