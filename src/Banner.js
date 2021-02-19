@@ -5,6 +5,7 @@ import "./Banner.css";
 
 function Banner() {
   const [movies, setMovies] = useState([]);
+  console.log("Coming");
   useEffect(() => {
     async function fetchData() {
       const response = await axios.get(request.fetchNetflixOrignal);
