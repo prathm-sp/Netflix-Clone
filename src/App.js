@@ -4,6 +4,7 @@ import HomeScreen from "./HomeScreen";
 import LoginScreen from "./LoginScreen";
 
 function App() {
+  console.log("Coming");
   return (
     <div className="App">
       <Router>
