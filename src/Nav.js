@@ -4,7 +4,6 @@ import "./Nav.css";
 
 function Nav() {
   const [show, handleShow] = useState();
-  console.log("Coming");
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
