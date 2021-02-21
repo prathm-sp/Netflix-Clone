@@ -1,7 +1,8 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import HomeScreen from "./HomeScreen";
-import LoginScreen from "./LoginScreen";
+import HomeScreen from "./HomeScreen/HomeScreen";
+import LoginScreen from "./Form/LoginScreen";
+import MovieDetails from "./MovieDetails";
 
 function App() {
   console.log("Coming");
@@ -14,6 +15,9 @@ function App() {
           </Route>
           <Route exact path="/Login">
             <LoginScreen />
+          </Route>
+          <Route exact path="/MovieDetails">
+            <MovieDetails />
           </Route>
         </Switch>
       </Router>
