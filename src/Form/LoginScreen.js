@@ -1,17 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Nav from "../Navbar/Nav";
 import "./LoginScreen.css";
 function Login() {
   console.log("Coming");
   return (
     <div className="loginScreen">
-      <Link to="/">
-        <img
-          className="loginScreen_logo"
-          src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
-        />
-      </Link>
-      <button className="loginScreen_button">Sign In</button>
+      <Nav />
       <div className="loginScreen_gradient" />
       <div className="loginScreen_body">
         <h1>Unlimited films,TV programmers and more.</h1>
