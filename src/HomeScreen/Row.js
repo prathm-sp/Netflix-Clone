@@ -48,7 +48,7 @@ function Row({ title, URL, isLarge }) {
   };
   console.log(trailerUrl);
   return (
-    <div className="row">
+    <div className="netflix_row">
       <h1>{title}</h1>
 
       <div className="row_posters">
