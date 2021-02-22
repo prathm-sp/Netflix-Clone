@@ -1,6 +1,6 @@
 .loginScreen {
   position: relative;
-  height: 100%;
+  min-height: 100vh;
   background: url(https://assets.nflxext.com/ffe/siteui/vlv3/757ab38f-5d08-40bc-b3eb-eaba63ed8203/93c34f94-56c8-40a7-8b2e-b4aac6427977/GB-en-20210125-popsignuptwoweeks-perspective_alpha_website_medium.jpg)
     center no-repeat;
   background-size: cover;
@@ -58,6 +58,10 @@
     transparent 60%,
     rgba(0, 0, 0, 0.8)
   );
+  webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .loginScreen_logo {
@@ -72,7 +76,7 @@
 .loginScreen_input > form > input {
   padding: 10px;
   outline-width: 0;
-  height: 30px;
+  height: 50px;
   width: 30%;
   border: none;
   max-width: 600px;
