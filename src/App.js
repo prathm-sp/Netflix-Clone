@@ -5,6 +5,7 @@ import LoginScreen from "./Form/LoginScreen";
 import MovieDetails from "./MovieDetails";
 
 function App() {
+  console.log("App Started");
   console.log("Coming");
   return (
     <div className="App">
