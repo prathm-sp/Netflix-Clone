@@ -46,6 +46,7 @@ function Row({ title, URL, isLarge }) {
         });
     }
   };
+  console.log("App Started")
   console.log(trailerUrl);
   return (
     <div className="netflix_row">
