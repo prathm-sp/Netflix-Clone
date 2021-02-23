@@ -4,6 +4,7 @@ import Nav from "../Navbar/Nav";
 import "./LoginScreen.css";
 function Login() {
   console.log("Coming");
+  console.log("App Started");
   return (
     <div className="loginScreen">
       <Nav />
