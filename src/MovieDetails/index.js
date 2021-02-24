@@ -1,7 +1,6 @@
 import React from "react";
 
 function Index() {
-  console.log("App Started")
   return (
     <div class="container">
       <div id="demo" class="carousel slide" data-ride="carousel">
