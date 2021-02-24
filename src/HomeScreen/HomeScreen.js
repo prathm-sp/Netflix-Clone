@@ -6,7 +6,6 @@ import Nav from "../Navbar/Nav";
 
 function HomeScreen() {
   console.log("Coming");
-  console.log("App Started")
   return (
     <div>
       <Nav />
