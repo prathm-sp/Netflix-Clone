@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Nav from "../Navbar/Nav";
 import "./LoginScreen.css";
 function Login() {
-  console.log("App Started");
   return (
     <div className="loginScreen">
       <Nav />
