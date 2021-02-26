@@ -1,195 +1,224 @@
-body {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(186, 216, 125);
-  font-size: 0.8rem;
-  font-family: "Work Sans";
-}
-
-.card {
-  max-width: 1000px;
-  width: 100%;
-  padding: 4rem;
-  background-color: rgb(46, 45, 45);
-  color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-@media (max-width: 768px) {
-  .card {
-    width: 100%;
-    padding: 1.5rem;
-  }
-}
-
-.row {
-  margin: 0;
-}
-
-.path {
-  color: grey;
-  margin-bottom: 1rem;
-}
-
-.path a {
-  color: #ffffff;
-}
-
-.info {
-  padding: 6vh 0vh;
-}
-
-@media (max-width: 768px) {
-  .info {
-    padding: 0;
-  }
-}
-
-.checked {
-  color: rgb(255, 217, 0);
-  margin-right: 1vh;
-}
-
-.fa-star-half-full {
-  color: rgb(255, 217, 0);
-}
-
-img {
-  height: fit-content;
-  width: 75%;
-  padding: 1rem;
-}
-
-@media (max-width: 768px) {
-  img {
-    padding: 2.5rem 0;
-  }
-}
-
-.title .col {
-  padding: 0;
-}
-
-.fa-heart-o {
-  font-size: 2rem;
-  color: #ffffffaf;
-  font-weight: lighter;
-}
-
-#reviews {
-  margin-left: 3vh;
-  color: grey;
-}
-
-.price {
-  margin-top: 2rem;
-}
-
-label.radio span {
-  padding: 1vh 4vh;
-  background-color: rgb(54, 54, 54);
-  color: grey;
-  display: inline-block;
-  margin-right: 2vh;
-}
-
-label.radio input:checked + span {
-  border: 1px solid white;
-  padding: 1vh 4vh;
-  background-color: rgb(54, 54, 54);
-  margin-right: 2vh;
-  color: #ffffff;
-  display: inline-block;
-}
-
-.carousel-control-prev {
-  width: unset;
-}
-
-.carousel-control-next {
-  left: 8vh;
-  right: unset;
-  width: unset;
-}
-
-.lower {
-  margin-top: 3rem;
-}
-
-.lower i {
-  padding: 2.5vh;
-  margin-right: 1vh;
-  color: grey;
-  border: 1px solid rgb(85, 85, 85);
-}
-
-.lower .col {
-  padding: 0;
-}
-
-@media (max-width: 768px) {
-  .lower i {
-    padding: 2vh;
-    margin-right: 1vh;
-    color: grey;
-    border: 1px solid rgb(85, 85, 85);
-  }
-}
-
-.btn {
-  background-color: transparent;
-  border-color: rgba(186, 216, 125, 0.863);
-  color: rgba(186, 216, 125, 0.863);
-  padding: 1.8vh 4.5vh;
-  height: fit-content;
-  border-radius: 3px;
-}
-
-.btn:focus {
-  box-shadow: none;
-  outline: none;
-  box-shadow: none;
-  color: white;
-  -webkit-box-shadow: none;
-  -webkit-user-select: none;
-  transition: none;
-}
-
-.btn:hover {
-  color: white;
-}
-
-@media (max-width: 768px) {
-  .btn {
-    background-color: transparent;
-    border-color: rgba(186, 216, 125, 0.863);
-    color: rgba(186, 216, 125, 0.863);
-    padding: 1vh;
-    font-size: 0.9rem;
-    height: fit-content;
-    border-radius: 3px;
-  }
-}
-
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 a {
-  color: unset;
-}
-
-a:hover {
-  color: unset;
   text-decoration: none;
+  color: #5c7fb8;
 }
-
-label.radio input {
+a:hover {
+  text-decoration: underline;
+}
+.movie-card {
+  font: 14px/22px "Lato", Arial, sans-serif;
+  color: #a9a8a3;
+  padding: 40px 0;
+}
+.container {
+  margin: 0 auto;
+  width: 780px;
+  height: 640px;
+  background: #000;
+  border-radius: 5px;
+  position: relative;
+}
+.hero {
+  height: 342px;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.hero:before {
+  content: "";
+  width: 100%;
+  height: 100%;
   position: absolute;
+  overflow: hidden;
   top: 0;
   left: 0;
-  visibility: hidden;
-  pointer-events: none;
+  background: red;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/hobbit_bg.jpg");
+  z-index: -1;
+  transform: skewY(-2.2deg);
+  transform-origin: 0 0;
+  -webkit-backface-visibility: hidden;
 }
-
-label.radio {
+.cover {
+  position: absolute;
+  top: 160px;
+  left: 40px;
+  z-index: 2;
+}
+.details {
+  padding: 190px 0 0 280px;
+}
+.details .title1 {
+  color: white;
+  font-size: 44px;
+  margin-bottom: 13px;
+  position: relative;
+}
+.details .title1 span {
+  position: absolute;
+  top: 3px;
+  margin-left: 12px;
+  background: #c4af3d;
+  border-radius: 5px;
+  color: #544c21;
+  font-size: 14px;
+  padding: 0px 4px;
+}
+.details .title2 {
+  color: #c7c1ba;
+  font-size: 23px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.details .likes {
+  margin-left: 24px;
+}
+.details .likes:before {
+  content: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/icon_like.png");
+  position: relative;
+  top: 2px;
+  padding-right: 7px;
+}
+.description {
+  bottom: 0px;
+  height: 200px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #b1b0ac;
+}
+.column1 {
+  padding-left: 14px;
+  padding-top: 120px;
+  width: 220px;
+  float: left;
+  display: flex;
+  text-align: center;
+}
+.tag {
+  padding: 2px 5px;
+  margin-right: 2px;
+  color: #fff;
+  display: inline-block;
+  border-radius: 4px;
+  margin-right: 4px;
+  line-height: 35px;
   cursor: pointer;
+}
+.tag:hover {
+  background: #ddd;
+}
+.column2 {
+  padding-left: 41px;
+  padding-top: 30px;
+  margin-left: 20px;
+  width: 480px;
+  float: left;
+}
+.avatars {
+  margin-top: 23px;
+}
+.avatars img {
+  cursor: pointer;
+}
+.avatars img:hover {
+  opacity: 0.6;
+}
+.avatars a:hover {
+  text-decoration: none;
+}
+fieldset,
+label {
+  margin: 0;
+  padding: 0;
+}
+/****** Style Star Rating Widget *****/
+.rating {
+  border: none;
+  float: left;
+}
+.rating > input {
+  display: none;
+}
+.rating > label:before {
+  margin: 5px;
+  margin-top: 0;
+  font-size: 1em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+.rating > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+.rating > label {
+  color: #ddd;
+  float: right;
+}
+/***** CSS Magic to Highlight Stars on Hover *****/
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  /* show gold star when clicked */
+  /* hover current star */
+  color: #ffd700;
+}
+/* hover previous stars in list */
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+  /* hover current star when changing rating */
+  /* lighten current selection */
+  color: #ffed85;
+}
+a[data-tooltip] {
+  position: relative;
+}
+a[data-tooltip]::before,
+a[data-tooltip]::after {
+  position: absolute;
+  display: none;
+  opacity: 0.85;
+}
+a[data-tooltip]::before {
+  /* * using data-tooltip instead of title so we * don't have the real tooltip overlapping */
+  content: attr(data-tooltip);
+  background: #000;
+  color: #fff;
+  font-size: 13px;
+  padding: 5px;
+  border-radius: 5px;
+  /* we don't want the text to wrap */
+  white-space: nowrap;
+  text-decoration: none;
+}
+a[data-tooltip]::after {
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  content: "";
+}
+a[data-tooltip]:hover::before,
+a[data-tooltip]:hover::after {
+  display: block;
+}
+/** positioning **/
+/* top tooltip */
+a[data-tooltip][data-placement="top"]::before {
+  bottom: 100%;
+  left: 0;
+  margin-bottom: 40px;
+}
+a[data-tooltip][data-placement="top"]::after {
+  border-top-color: #000;
+  border-bottom: none;
+  bottom: 50px;
+  left: 20px;
+  margin-bottom: 4px;
 }
