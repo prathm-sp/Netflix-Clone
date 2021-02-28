@@ -10,15 +10,26 @@ a:hover {
 .movie-card {
   font: 14px/22px "Lato", Arial, sans-serif;
   color: #a9a8a3;
+  background-color: #111;
   padding: 40px 0;
 }
-.container {
+@media (max-width: 576px) {
+  .movie-card {
+    background-color: #fff;
+  }
+  .movie_container {
+    height: 100%;
+  }
+}
+.movie_container {
   margin: 0 auto;
   width: 780px;
-  height: 640px;
+  height: 111vh;
+  display: flex;
   background: #000;
   border-radius: 5px;
   position: relative;
+  flex-direction: column;
 }
 .hero {
   height: 342px;
@@ -37,8 +48,6 @@ a:hover {
   overflow: hidden;
   top: 0;
   left: 0;
-  background: red;
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/hobbit_bg.jpg");
   z-index: -1;
   transform: skewY(-2.2deg);
   transform-origin: 0 0;
@@ -48,7 +57,9 @@ a:hover {
   position: absolute;
   top: 160px;
   left: 40px;
+  max-height: 266px;
   z-index: 2;
+  object-fit: contain;
 }
 .details {
   padding: 190px 0 0 280px;

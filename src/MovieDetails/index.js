@@ -1,22 +1,37 @@
 import React from "react";
 import "./style.css";
-function Index() {
+import Navbar from "../Navbar/Nav";
+
+const baseURL = "https://image.tmdb.org/t/p/original";
+
+function Index({ movieDetails }) {
+  // `${baseURL}${
+  //   isLarge ? movie.poster_path : movie.poster_path
+  // }`
   return (
-    <>
+    <div>
+      <Navbar />
       <div class="movie-card">
-        <div class="container">
+        <div class="movie_container">
           <a href="#">
             <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/hobbit_cover.jpg"
+              src={`${baseURL}${movieDetails?.poster_path}`}
               alt="cover"
               class="cover"
             />
           </a>
 
-          <div class="hero">
+          <div
+            class="hero"
+            style={{
+              background: `url(${baseURL}${movieDetails?.backdrop_path})`,
+              objectFit: "contain",
+              backgroundPosition: "center",
+            }}
+          >
             <div class="details">
               <div class="title1">
-                The Hobbit <span>PG-13</span>
+                {movieDetails?.title} <span>PG-13</span>
               </div>
 
               <div class="title2">The Battle of the Five Armies</div>
@@ -171,7 +186,7 @@ function Index() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
