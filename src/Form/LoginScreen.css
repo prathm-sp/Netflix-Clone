@@ -6,6 +6,13 @@
   background-size: cover;
 }
 
+.loginScreen_input > a {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #f3f3f3;
+  cursor: pointer;
+}
+
 .loginScreen_button {
   position: fixed;
   right: 20px;
