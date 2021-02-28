@@ -4,17 +4,18 @@ import Row from "./Row";
 import Banner from "./Banner";
 import Nav from "../Navbar/Nav";
 
-function HomeScreen() {
+function HomeScreen(props) {
   console.log("Coming");
   console.log("App Started");
   return (
-    <div>
+    <div style={{ background: "#111" }}>
       <Nav />
       <Banner />
       <Row
         title="Netflix Orignal Movies"
         URL={request.fetchNetflixOrignal}
         isLarge
+        setMovieDetails={props.setMovieDetails}
       />
       <Row title="Trending Movies" URL={request.fetchTrending} />
       <Row title="Action Movies" URL={request.fetchActionMovies} />
