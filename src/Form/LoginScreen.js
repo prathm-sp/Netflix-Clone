@@ -19,6 +19,7 @@ function Login() {
             <input type="email" placeholder="Email Address" />
             <button className="loginScreen_getStarted">Get Started</button>
           </form>
+          <Link to="/Register">Already Registered? Sign In</Link>
         </div>
       </div>
     </div>
