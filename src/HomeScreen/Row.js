@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const baseURL = "https://image.tmdb.org/t/p/original/";
 
-function Row({ title, URL, isLarge }) {
+function Row({ title, URL, isLarge, setMovieDetails }) {
   const [movies, setMovies] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState("");
 
@@ -30,22 +30,32 @@ function Row({ title, URL, isLarge }) {
 
   const handleClick = (movie) => {
     console.log(movie.name);
-    if (trailerUrl) {
-      setTrailerUrl("");
-    } else {
-      movieTrailer(movie?.name || "")
-        .then(async (url) => {
-          console.log(url);
-          var urlParams = await new URLSearchParams(new URL(url).search);
-          console.log("Yes");
-          console.log(urlParams);
-          console.log(urlParams.get("v"));
-          setTrailerUrl(urlParams.get("v"));
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-    }
+    // if (trailerUrl) {
+    //   setTrailerUrl("");
+    // } else {
+    //   movieTrailer(movie?.name || "")
+    //     .then(async (url) => {
+    //       console.log(url);
+    //       var urlParams = await new URLSearchParams(new URL(url).search);
+    //       console.log("Yes");
+    //       console.log(urlParams);
+    //       console.log(urlParams.get("v"));
+    //       setTrailerUrl(urlParams.get("v"));
+    //     })
+    //     .catch((err) => {
+    //       console.log(err);
+    //     });
+    // }
+    axios
+      .get(
+        "/movie/63174?api_key=de88566cf29ef654e21394ab0906ad7e&language=en-US"
+      )
+      .then((res) => {
+        setMovieDetails(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
   console.log(trailerUrl);
   console.log("App Started");
