@@ -6,6 +6,16 @@
   padding-left: 0;
 }
 
+.ytp-chrome-top-buttons {
+  display: none !important;
+}
+
+.youtubePlayer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .netflix_row {
   margin-left: 20px;
   color: white;
