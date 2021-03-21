@@ -16,7 +16,7 @@ function SignUpScreen() {
               <input type="password" placeholder="Enter Password" />
               <button>Login</button>
 
-              <Link to="/Login">New Here? Register</Link>
+              <Link to="/">New Here? Register</Link>
             </form>
           </div>{" "}
         </div>
