@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Nav from "../Navbar/Nav";
 import "./LoginScreen.css";
 function Login() {
@@ -19,7 +18,6 @@ function Login() {
             <input type="email" placeholder="Email Address" />
             <button className="loginScreen_getStarted">Get Started</button>
           </form>
-          <Link to="/Register">Already Registered? Sign In</Link>
         </div>
       </div>
     </div>
