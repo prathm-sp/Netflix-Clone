@@ -1,0 +1,843 @@
+.loginScreen {
+  position: relative;
+  min-height: 100vh;
+  background: url(https://assets.nflxext.com/ffe/siteui/vlv3/757ab38f-5d08-40bc-b3eb-eaba63ed8203/93c34f94-56c8-40a7-8b2e-b4aac6427977/GB-en-20210125-popsignuptwoweeks-perspective_alpha_website_medium.jpg)
+    center no-repeat;
+  background-size: cover;
+}
+
+.loginScreen_input > a {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #f3f3f3;
+  cursor: pointer;
+}
+
+.loginScreen_button {
+  position: fixed;
+  right: 20px;
+  border: none;
+  cursor: pointer;
+  top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #e50914;
+  color: #fff;
+  font-weight: 600;
+}
+
+.loginScreen_body > h1 {
+  font-size: 3.125rem;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.loginScreen_body > h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.loginScreen_body > h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.loginScreen_body {
+  position: absolute;
+  top: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /* z-index: 1; */
+  color: #fff;
+  padding: 20px;
+  left: 0;
+  right: 0;
+}
+
+.loginScreen_gradient {
+  width: 100%;
+  z-index: 1;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0,
+    transparent 60%,
+    rgba(0, 0, 0, 0.8)
+  );
+  webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.loginScreen_logo {
+  position: fixed;
+  cursor: pointer;
+  left: 0;
+  width: 150px;
+  object-fit: contain;
+  padding-left: 20px;
+}
+
+.loginScreen_input > form > input {
+  padding: 10px;
+  outline-width: 0;
+  height: 50px;
+  width: 30%;
+  border: none;
+  max-width: 600px;
+}
+
+.loginScreen_input {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 696px) {
+  .loginScreen_body > h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+    letter-spacing: 3px;
+  }
+  .loginScreen_body > h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+}
+
+.loginScreen_getStarted {
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  outline-width: 0;
+  color: #fff;
+  background-color: #e50914;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.welcome__page__banner1 {
+  height: 430px;
+  background: #111;
+  display: flex;
+}
+
+.welcome__page__banner1 > div > h1,
+.welcome__page__banner1 > div > h3 {
+  color: white;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px),
+  only screen and (min-width: 950px) and (max-width: 1449px),
+  only screen and (min-width: 1450px) {
+  .our-story-card {
+    padding: 70px 45px;
+  }
+}
+.our-story-card {
+  border-bottom: 8px solid #222;
+  padding: 50px 5%;
+  margin-bottom: 0;
+  background: 0 0;
+  color: #fff;
+}
+
+.animation-card.flipped .animation-card-container .our-story-card-text {
+  padding: 0 0 0 3rem;
+}
+
+.animation-card .animation-card-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.animation-card.watchOnTv .our-story-card-text {
+  margin: -5% 0;
+}
+
+.animation-card .our-story-card-text {
+  width: 52%;
+  height: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -moz-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  padding: 0 3rem 0 0;
+  /* z-index: 3; */
+}
+
+.our-story-card-subtitle,
+.our-story-card-text {
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+
+.our-story-card-title {
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+hr {
+  border: 6px solid #222222;
+  margin: 0 !important;
+  opacity: 1 !important;
+}
+
+.our-story-card-subtitle,
+.our-story-card-text {
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 740px) {
+  h2 {
+    font-size: 27px;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px),
+  only screen and (min-width: 950px) and (max-width: 1449px),
+  only screen and (min-width: 1450px) {
+  .our-story-card {
+    padding: 70px 45px;
+  }
+}
+
+.animation-card.flipped .animation-card-container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-flow: row-reverse;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: reverse;
+  -ms-flex-flow: row-reverse;
+  flex-flow: row-reverse;
+}
+
+.animation-card.downloadAndWatch .our-story-card-animation-container {
+  margin: -8% 0 -4% -15%;
+  min-height: 100px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1449px),
+  only screen and (min-width: 1450px) {
+  .animation-card.downloadAndWatch .our-story-card-animation {
+    padding: 0.5em 0.75em;
+  }
+}
+
+.animation-card.downloadAndWatch
+  .our-story-card-animation
+  .our-story-card-animation-image {
+  margin: 0 1em 0 0;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -moz-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1449px) {
+  .animation-card.downloadAndWatch
+    .our-story-card-animation
+    .our-story-card-animation-image
+    img {
+    height: 4.5em;
+  }
+}
+
+.animation-card.downloadAndWatch
+  .our-story-card-animation
+  .our-story-card-animation-image
+  img {
+  height: 3em;
+}
+
+.animation-card.downloadAndWatch
+  .our-story-card-animation
+  .our-story-card-animation-text {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -moz-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  margin: 0.3em 0;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px),
+  only screen and (min-width: 950px) and (max-width: 1449px),
+  only screen and (min-width: 1450px) {
+  .animation-card.downloadAndWatch
+    .our-story-card-animation
+    .our-story-card-animation-text
+    .text-1,
+  .animation-card.downloadAndWatch
+    .our-story-card-animation
+    .our-story-card-animation-text
+    .text-2 {
+    font-size: 0.9em;
+  }
+}
+
+.animation-card.downloadAndWatch
+  .our-story-card-animation
+  .our-story-card-animation-text {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -moz-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  margin: 0.3em 0;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px),
+  only screen and (min-width: 950px) and (max-width: 1449px),
+  only screen and (min-width: 1450px) {
+  .animation-card.downloadAndWatch .our-story-card-animation:after {
+    height: 3.75em;
+  }
+}
+
+.animation-card.downloadAndWatch .our-story-card-animation:after {
+  width: 3em;
+  height: 3em;
+  outline: 2px solid #000;
+  outline-offset: -2px;
+  display: block;
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif)
+    center center no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  content: "";
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -moz-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.animation-card.downloadAndWatch
+  .our-story-card-animation
+  .our-story-card-animation-text
+  .text-1,
+.animation-card.downloadAndWatch
+  .our-story-card-animation
+  .our-story-card-animation-text
+  .text-2 {
+  color: #0071eb;
+  font-size: 0.75em;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px),
+  only screen and (min-width: 950px) and (max-width: 1449px),
+  only screen and (min-width: 1450px) {
+  .animation-card.downloadAndWatch
+    .our-story-card-animation
+    .our-story-card-animation-text
+    .text-0 {
+    font-size: 1em;
+  }
+}
+
+.animation-card.downloadAndWatch
+  .our-story-card-animation
+  .our-story-card-animation-text
+  .text-0 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px),
+  only screen and (min-width: 400px) and (max-width: 549px),
+  only screen and (min-width: 350px) and (max-width: 399px),
+  only screen and (max-width: 349px) {
+  .animation-card.flipped .animation-card-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 549px),
+  only screen and (min-width: 350px) and (max-width: 399px),
+  only screen and (max-width: 349px) {
+  .our-story-card-title {
+    font-size: 1.625rem;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 549px),
+  only screen and (min-width: 350px) and (max-width: 399px),
+  only screen and (max-width: 349px) {
+  .our-story-card-subtitle,
+  .our-story-card-text {
+    font-size: 1.125rem;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px),
+  only screen and (min-width: 400px) and (max-width: 549px),
+  only screen and (min-width: 350px) and (max-width: 399px),
+  only screen and (max-width: 349px) {
+  .animation-card .our-story-card-img-container {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1em;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px),
+  only screen and (min-width: 400px) and (max-width: 549px),
+  only screen and (min-width: 350px) and (max-width: 399px),
+  only screen and (max-width: 349px) {
+  .animation-card.flipped .animation-card-container .our-story-card-text {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px),
+  only screen and (min-width: 400px) and (max-width: 549px),
+  only screen and (min-width: 350px) and (max-width: 399px),
+  only screen and (max-width: 349px) {
+  .animation-card .our-story-card-animation-container {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px),
+  only screen and (min-width: 400px) and (max-width: 549px),
+  only screen and (min-width: 350px) and (max-width: 399px),
+  only screen and (max-width: 349px) {
+  .animation-card.downloadAndWatch .our-story-card-animation-container {
+    margin: -8% 0 0 0;
+  }
+}
+
+.animation-card.downloadAndWatch .our-story-card-animation {
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin: 0 auto;
+  background: #000;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 60%;
+  min-width: 15em;
+  padding: 0.25em 0.65em;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 0 0 2em 0 #000;
+  -moz-box-shadow: 0 0 2em 0 #000;
+  box-shadow: 0 0 2em 0 #000;
+  -webkit-border-radius: 0.75em;
+  -moz-border-radius: 0.75em;
+  border-radius: 0.75em;
+}
+
+.animation-card .our-story-card-img-container {
+  width: 48%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -moz-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px),
+  only screen and (min-width: 400px) and (max-width: 549px),
+  only screen and (min-width: 350px) and (max-width: 399px),
+  only screen and (max-width: 349px) {
+  .animation-card .animation-card-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.animation-card.watchOnTv .our-story-card-animation-container {
+  margin: -9% -5% -5% 0;
+}
+
+.animation-card .our-story-card-animation-container {
+  position: relative;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px),
+  only screen and (min-width: 400px) and (max-width: 549px),
+  only screen and (min-width: 350px) and (max-width: 399px),
+  only screen and (max-width: 349px) {
+  .animation-card.watchOnTv .our-story-card-text {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px) {
+  .our-story-card-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px),
+  only screen and (min-width: 400px) and (max-width: 549px),
+  only screen and (min-width: 350px) and (max-width: 399px),
+  only screen and (max-width: 349px) {
+  .animation-card .our-story-card-img-container {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1em;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px),
+  only screen and (min-width: 400px) and (max-width: 549px),
+  only screen and (min-width: 350px) and (max-width: 399px),
+  only screen and (max-width: 349px) {
+  .animation-card .our-story-card-text {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px),
+  only screen and (min-width: 400px) and (max-width: 549px),
+  only screen and (min-width: 350px) and (max-width: 399px),
+  only screen and (max-width: 349px) {
+  .animation-card.watchOnTv .our-story-card-animation-container {
+    margin: -10% 0 0 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px) {
+  .our-story-card-subtitle,
+  .our-story-card-text {
+    font-size: 1.25rem;
+  }
+}
+
+.animation-card.watchOnDevice .our-story-card-img,
+.animation-card.watchOnTv .our-story-card-img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.faq-card {
+  text-align: center;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px),
+  only screen and (min-width: 950px) and (max-width: 1449px),
+  only screen and (min-width: 1450px) {
+  .our-story-card {
+    padding: 70px 45px;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px) {
+  .faq-card .faq-list {
+    width: 90%;
+    margin: 1.5em auto;
+  }
+}
+
+.faq-card .faq-list-item {
+  list-style-type: none;
+  margin: 0 0 8px 0;
+}
+
+ul > li {
+  margin-left: 1.1em;
+  margin-bottom: 5px;
+  list-style-type: disc;
+}
+
+.faq-card .faq-question {
+  padding: 0.8em 2.2em 0.8em 1.2em;
+  margin-bottom: 1px;
+  font-weight: 400;
+  position: relative;
+  width: 100%;
+  border: 0;
+}
+
+.faq-card .faq-answer,
+.faq-card .faq-question {
+  display: block;
+  text-align: left;
+  background: #303030;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+.faq-card .faq-answer.closed {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+  -o-transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+  -moz-transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+  transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.faq-card .faq-answer {
+  overflow: hidden;
+}
+
+.faq-card .faq-answer,
+.faq-card .faq-question {
+  display: block;
+  text-align: left;
+  background: #303030;
+}
+
+.faq-card .faq-answer span {
+  display: inline-block;
+  padding: 1.2em;
+}
+
+.faq-card .faq-list-item {
+  list-style-type: none;
+  margin: 0 0 8px 0;
+}
+
+.faq-card .svg-icon-thin-x {
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 1em;
+  width: 1em;
+  fill: #fff;
+}
+
+.faq-card .svg-closed {
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+  -moz-transform: translateY(-50%) rotate(-45deg);
+  -ms-transform: translateY(-50%) rotate(-45deg);
+  -o-transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.faq-card .faq-answer.open {
+  max-height: 1200px;
+  -webkit-transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+  -o-transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+  -moz-transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+  transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.faq-card .faq-question {
+  padding: 0.8em 2.2em 0.8em 1.2em;
+  margin-bottom: 1px;
+  font-weight: 400;
+  position: relative;
+  width: 100%;
+  border: 0;
+}
+
+.faq-card .faq-answer,
+.faq-card .faq-question {
+  color: #fff;
+  display: block;
+  text-align: left;
+  background: #303030;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px) {
+  .faq-card .faq-list {
+    width: 90%;
+    margin: 1.5em auto;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 549px),
+  only screen and (min-width: 350px) and (max-width: 399px),
+  only screen and (max-width: 349px) {
+  .faq-card {
+    padding: 50px 0;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 549px),
+  only screen and (min-width: 350px) and (max-width: 399px),
+  only screen and (max-width: 349px) {
+  .our-story-card-subtitle,
+  .our-story-card-text {
+    font-size: 1.125rem;
+  }
+}
+
+.faq-card .faq-list {
+  margin: 1.25em auto;
+  max-width: 815px;
+}
+
+ul {
+  padding: 0;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 549px),
+  only screen and (min-width: 350px) and (max-width: 399px),
+  only screen and (max-width: 349px) {
+  .faq-card .our-story-card-title,
+  .faq-card .our-story-cta-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 549px),
+  only screen and (min-width: 350px) and (max-width: 399px),
+  only screen and (max-width: 349px) {
+  .our-story-card-title {
+    font-size: 1.625rem;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px) {
+  .our-story-card-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px) {
+  .our-story-card-subtitle,
+  .our-story-card-text {
+    font-size: 1.25rem;
+  }
+}
+
+.animation-card.watchOnTv .our-story-card-animation {
+  width: 89%;
+  height: 100%;
+  max-width: 80%;
+  max-height: 54%;
+  position: absolute;
+  top: 48%;
+  left: 49.6%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+}
+
+.our-story-card-subtitle,
+.our-story-card-text {
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 549px),
+  only screen and (min-width: 350px) and (max-width: 399px),
+  only screen and (max-width: 349px) {
+  .our-story-card-subtitle,
+  .our-story-card-text {
+    font-size: 1.125rem;
+  }
+}
+
+.animation-card.watchOnDevice .our-story-card-video,
+.animation-card.watchOnTv .our-story-card-video {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px),
+  only screen and (min-width: 400px) and (max-width: 549px),
+  only screen and (min-width: 350px) and (max-width: 399px),
+  only screen and (max-width: 349px) {
+  .animation-card .animation-card-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
