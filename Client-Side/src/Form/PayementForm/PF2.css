@@ -1,0 +1,179 @@
+.planContainer,
+.regContainer,
+.verifyCardContainer,
+.verifyCardPageContainer {
+  text-align: center;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+div.basicLayout .stepLogoContainer {
+  display: inline-block;
+}
+
+div.basicLayout .stepLogoContainer .stepLogo {
+  margin: 100px 0 20px;
+}
+
+div.basicLayout .paymentStepLogo,
+div.basicLayout .planStepLogo {
+  width: 50px;
+  -webkit-background-size: 50px 50px;
+  -moz-background-size: 50px;
+  background-size: 50px;
+  height: 50px;
+}
+
+div.basicLayout .paymentContainer .contextBody,
+div.basicLayout .planContainer .contextBody,
+div.basicLayout .regContainer .contextBody,
+div.basicLayout .verifyCardContainer .contextBody {
+  margin: 0;
+  font-size: 17px;
+}
+
+.planContainer .stepLogo,
+.regContainer .stepLogo,
+.verifyCardContainer .stepLogo,
+.verifyCardPageContainer .stepLogo {
+  display: block;
+  margin: 10% 0 10%;
+}
+
+.planStepLogo {
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/simplicity/Checkmark.png)
+    no-repeat 50% 50%;
+  -webkit-background-size: 60px 60px;
+  -moz-background-size: 60px;
+  background-size: 60px;
+  height: 60px;
+}
+
+.stepHeader {
+  display: inline-block;
+}
+
+div.basicLayout .stepIndicator {
+  text-align: inherit;
+  font-size: 13px;
+}
+
+.stepTitle {
+  font-weight: 700;
+  font-size: 23px;
+}
+
+div.basicLayout .paymentContainer .contextBody,
+div.basicLayout .planContainer .contextBody,
+div.basicLayout .regContainer .contextBody,
+div.basicLayout .verifyCardContainer .contextBody {
+  margin: 0;
+  font-size: 17px;
+}
+
+.checkmark-group--row + .checkmark-group--row {
+  margin-top: 20px;
+}
+
+.planContainer .contextBody,
+.regContainer .contextBody,
+.verifyCardContainer .contextBody,
+.verifyCardPageContainer .contextBody {
+  margin: 30px 0;
+  font-size: 19px;
+}
+
+.planContainer .contextRow,
+.regContainer .contextRow,
+.verifyCardContainer .contextRow,
+.verifyCardPageContainer .contextRow {
+  max-width: 300px;
+  display: inline-block;
+}
+
+.checkmark-group {
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: -1;
+  -moz-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+}
+
+.checkmark-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.checkmark-group--row {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -moz-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+ul > li {
+  margin-left: 1.1em;
+  margin-bottom: 5px;
+  list-style-type: disc;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.checkmark-group--icon {
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  color: #e50914;
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+  -moz-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+  height: 24px;
+  width: 24px;
+}
+
+.checkmark-group--text {
+  margin-left: 10px;
+  margin-top: 2px;
+  font-size: 17px;
+}
