@@ -37,7 +37,7 @@
   font-weight: 400;
 }
 .loginScreen_body > h3 {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -84,33 +84,37 @@
   padding: 10px;
   outline-width: 0;
   height: 50px;
-  width: 30%;
+  width: 70%;
   border: none;
-  max-width: 600px;
+  margin: 10px 0px;
+  max-width: 391px;
+  min-width: 210px;
 }
 
 .loginScreen_input {
-  margin: 20px;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 @media (max-width: 696px) {
   .loginScreen_body > h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-bottom: 20px;
     font-weight: 400;
     letter-spacing: 3px;
   }
   .loginScreen_body > h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-bottom: 30px;
     font-weight: 400;
   }
 }
 
 .loginScreen_getStarted {
-  padding: 15px 20px;
+  padding: 12px 20px;
   cursor: pointer;
   font-size: 1rem;
   outline-width: 0;
@@ -119,6 +123,7 @@
   border: none;
   font-weight: 700;
   text-transform: uppercase;
+  padding-top: 14px;
 }
 
 .welcome__page__banner1 {

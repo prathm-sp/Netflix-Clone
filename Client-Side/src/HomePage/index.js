@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import Nav from "../Header/Nav";
 
 import "./style.css";
 
 function Index() {
+  const history = useHistory();
   const handleSvgClick = (index) => {
     var btn = document.getElementsByClassName("svg-icon svg-icon-thin-x");
     var para = document.getElementsByClassName("faq-answer");
@@ -16,52 +18,17 @@ function Index() {
     console.log(btn[index]);
     console.log(para[index]);
   };
-  const [show, handleShow] = useState();
-  console.log("App Started");
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 100) {
-        handleShow(true);
-      } else {
-        handleShow(false);
-      }
-    });
-    return () => {
-      window.removeEventListener("scroll", () => {
-        return null;
-      });
-    };
-  }, []);
+
+  const handleFormClick = (e) => {
+    e.preventDefault();
+    console.log(e.target[0].value);
+    localStorage.setItem("email", e.target[0].value);
+    history.push("/SignUp/password");
+  };
   return (
     <div style={{ backgroundColor: "#000000", overflowX: "scroll" }}>
       <div className="loginScreen">
-        <div
-          className={`nav ${show && "nav_black"}`}
-          style={{ position: "absolute" }}
-        >
-          <Link to="/">
-            {" "}
-            <img
-              className="nav_logo"
-              src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
-              alt="Netflix Logo"
-              style={{ position: "absolute" }}
-            />
-          </Link>
-          <Link to="login">
-            {/* <img
-          className="nav_avatar"
-          src="https://pbs.twimg.com/profile_images/1240119990411550720/hBEe3tdn_400x400.png"
-          alt="Netflix Logo"
-        /> */}
-            <button
-              className="loginScreen_button"
-              style={{ position: "absolute" }}
-            >
-              Sign In
-            </button>
-          </Link>
-        </div>
+        <Nav />
         <div className="loginScreen_gradient" />
         <div className="loginScreen_body">
           <h1>Unlimited films,TV programmers and more.</h1>
@@ -72,8 +39,8 @@ function Index() {
           </h3>
 
           <div className="loginScreen_input">
-            <form>
-              <input type="email" placeholder="Email Address" />
+            <form style={{ width: "100%" }} onSubmit={handleFormClick}>
+              <input type="email" placeholder="Email Address" required />
               <button className="loginScreen_getStarted">Get Started</button>
             </form>
           </div>
