@@ -1,0 +1,239 @@
+#appMountPoint .simpleContainer {
+  padding-bottom: 95px;
+}
+
+.basicLayout.simplicity .simpleContainer {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -moz-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+div.basicLayout .nfHeader,
+div.basicLayout .simpleContainer {
+  background-color: #fff;
+}
+
+.simpleContainer {
+  min-height: 100vh;
+  padding: 20px 32px 60px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+div.basicLayout .centerContainer {
+  --layout-container-side-padding: 32px;
+  padding: 20px 32px 60px;
+  padding: 20px var(--layout-container-side-padding) 60px;
+}
+
+div.basicLayout .stepLogoContainer {
+  display: inline-block;
+}
+
+div.basicLayout .stepLogoContainer .stepLogo {
+  margin: 100px 0 20px;
+}
+
+div.basicLayout .regStepLogo {
+  width: 260px;
+}
+
+.planContainer .stepLogo,
+.regContainer .stepLogo,
+.verifyCardContainer .stepLogo,
+.verifyCardPageContainer .stepLogo {
+  display: block;
+  margin: 10% 0 10%;
+}
+
+.regStepLogo {
+  display: block;
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/simplicity/Devices.png)
+    no-repeat 50% 50%;
+  height: 90px;
+  -webkit-background-size: 260px 260px;
+  -moz-background-size: 260px;
+  background-size: 260px;
+}
+
+.centerContainer.firstLoad {
+  display: block;
+}
+
+.centerContainer {
+  overflow: hidden;
+  display: none;
+}
+
+.centerContainer {
+  margin: 0 auto 15px;
+  padding: 20px 3% 60px;
+  max-width: 978px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 78px;
+}
+
+.stepIndicator {
+  text-align: inherit;
+  font-size: 13px;
+}
+
+.stepTitle {
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.regFormContainer .contextRow {
+  margin-top: 15px;
+  font-size: 19px;
+}
+
+.regFormContainer {
+  text-align: left;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.regFormContainer .simpleForm {
+  margin: 10px 0 20px;
+}
+
+ul.structural {
+  padding: 0;
+  margin: 0;
+}
+
+ul.structural > li {
+  list-style: none;
+  margin-left: 0;
+}
+
+.nfFormSpace {
+  margin-bottom: 10px;
+}
+
+.passwordFormContainer .input-readOnly {
+  padding: 10px 0;
+}
+
+.passwordFormContainer .value-readOnly {
+  font-weight: 700;
+}
+
+.nfInput {
+  max-width: 500px;
+  position: relative;
+}
+
+.nfInput .nfInputPlacement {
+  position: relative;
+}
+
+.nfInput.nfInputOversize .nfTextField {
+  height: 60px;
+}
+
+.nfInput .nfTextField {
+  height: 48px;
+  padding: 10px 10px 10px;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #0071eb;
+}
+
+.simpleContainer .submitBtnContainer {
+  margin-top: 24px;
+}
+
+.fab5-bigger-cta button.modal-action-button,
+.fab5-bigger-cta button.nf-btn-primary {
+  font-size: 24px;
+  height: 64px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+div.basicLayout .nf-btn-primary,
+div.basicLayout .nf-btn-secondary {
+  min-height: 48px;
+  font-weight: 400;
+  font-size: 17px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.nf-btn.nf-btn-oversize {
+  font-size: 19px;
+  padding: 0.75rem 25.33333333px;
+  min-width: 110px;
+  min-height: 60px;
+  width: 100%;
+  line-height: 19px;
+}
+
+.nf-btn-solid.nf-btn-primary,
+.nf-btn-twotone.nf-btn-primary {
+  color: #fff;
+  background-color: #e50914;
+}
+
+.nf-btn {
+  position: relative;
+  font-size: 1rem;
+  padding: 0.75rem 1.33333333rem;
+  min-width: 74px;
+  min-height: 48px;
+  width: 100%;
+}
+
+.nf-btn {
+  display: inline-block;
+  text-decoration: none;
+  line-height: 1rem;
+  vertical-align: middle;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 0.025rem;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  position: relative;
+  min-height: 48px;
+  -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 25%);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 1px rgb(0 0 0 / 25%);
+  color: #000;
+}
+
+@media only screen and (min-width: 500px) {
+  .nf-btn {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 740px) {
+  h1 {
+    font-size: 38px;
+  }
+}
